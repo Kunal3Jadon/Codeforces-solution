@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long n,m,a;
+    cin >> n >> m >> a;
+    long long lar = max(n, m);
+    long long l = lar - (lar % a);
+    long long sma = min(n, m);
+    long long b = sma - (sma % a);
+    long long sq = (l * b) / (a * a);
+    if(sma%a!=0)
+    sq += (l / a);
+    if(lar%a!=0)
+    sq += (b / a);
+    if(lar%a!=0 && sma%a!=0)
+        sq++;
+    cout << sq;
+}
