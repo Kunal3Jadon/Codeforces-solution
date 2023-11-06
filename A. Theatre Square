@@ -16,4 +16,5 @@ int main()
     if(lar%a!=0 && sma%a!=0)
         sq++;
     cout << sq;
+int a=10;
 }
