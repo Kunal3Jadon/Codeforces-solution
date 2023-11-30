@@ -14,7 +14,7 @@ int main()
     if(lar%a!=0)
     sq += (b / a);
     if(lar%a!=0 && sma%a!=0)
-        sq++;
+        s
     cout << sq;
 int a=10;
 }
